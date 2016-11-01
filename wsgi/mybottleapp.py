@@ -4,7 +4,6 @@
 from bottle import route, run, template, get, post, request, response, redirect, default_app, static_file, TEMPLATE_PATH, error, redirect
 from pymongo import MongoClient
 from bson.json_util import dumps
-import ast
 
 @route('/')
 def redirect_to_login():
