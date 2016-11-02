@@ -18,7 +18,7 @@ def resultado():
 	user  = request.forms.get("user")
 	passwd = request.forms.get("passwd")
 	database = request.forms.get("database")
-	mongoserver_uri = "mongodb://"+user+":"+passwd+"@localhost:27017/"+database
+	mongoserver_uri = "mongodb://%s:%s@localhost:27017/%s" % (user,passwd,database)
 	conection = MongoClient(host=mongoserver_uri)
 	db = conection[database]
 	nombre_coleccion='productos'
@@ -32,5 +32,5 @@ def resultado():
 #def error500(error):
 #	return template('500.tpl')
 
-run(host='172.22.9.179', port=8080, debug=True)
+run(host='172.22.6.98', port=8080, debug=True)
 
