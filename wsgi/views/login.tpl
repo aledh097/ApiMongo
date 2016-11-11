@@ -13,7 +13,7 @@
 		<p>Usuario: <input name="user" type="text" class="search-field"/>
 		<p>Contraseña: <input name="passwd" type="password" class="search-field"/>
 		<p>Base de datos: <input name="database" type="text" class="search-field"/>
-		<p>IP del host: <input name="ip_host" type="text" class="search-field"/>
+		<p>Host: <input name="ip_host" type="text" class="search-field"/>
 		<div class="submit-container">
 			<input type="submit" value="Entrar" class="submit" />
 		</div>
