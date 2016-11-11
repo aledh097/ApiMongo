@@ -27,10 +27,5 @@ def resultado():
 	resultado_dumps=dumps(resultado)
 	return template('resultado.tpl', resultado_dumps=resultado_dumps, coleccion=nombre_coleccion)
 
-#@error(500)
-
-#def error500(error):
-#	return template('500.tpl')
-
 run(host='172.22.6.98', port=8080, debug=True)
 
